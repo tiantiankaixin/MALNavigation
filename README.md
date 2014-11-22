@@ -8,7 +8,7 @@ MALNavigationItem
 的leftItem，titleView,rightItem并可以自主控制item的偏移量。
 
 <p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="line-height: 1.5; font-family: 'Heiti SC Light';">使用方法</span><span style="line-height: 1.5;">:</span></p>
-<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-family: 'Heiti SC Light';">一、将</span>demo<span style="font-family: 'Heiti SC Light';">里的</span>CusBarItem<span style="font-family: 'Heiti SC Light';">文件夹加入工程。</span></p>
+<p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-family: 'Heiti SC Light';">一、将</span>demo<span style="font-family: 'Heiti SC Light';">里的</span>customBarItem<span style="font-family: 'Heiti SC Light';">文件夹加入工程。</span></p>
 <p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;"><span style="font-family: 'Heiti SC Light';">二、在要设置的文件里加入头文件</span>#import "UINavigationItem+CustomItem.h"</p>
 <p style="margin: 0px; font-size: 11px; line-height: normal; font-family: 'Heiti SC Light';">三、设置</p>
 <p style="margin: 0px; font-size: 11px; line-height: normal; font-family: Menlo;">&nbsp; &nbsp; 1<span style="font-family: 'Heiti SC Light';">、通过文字设置</span>item</p>
