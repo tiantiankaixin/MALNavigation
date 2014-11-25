@@ -10,7 +10,7 @@
 
 @implementation UINavigationItem (CustomItem)
 
-- (CustomBarItem *)setItemWithTitle:(NSString *)title textColor:(UIColor *)color fontSize:(CGFloat)font itemType:(ItemType)type
+- (CustomBarItem *)setItemWithTitle:(NSString *)title titleColor:(UIColor *)color fontSize:(CGFloat)font itemType:(ItemType)type
 {
     CustomBarItem *item = [CustomBarItem itemWithTitle:title textColor:color fontSize:font itemType:type];
     [item setItemWithNavigationItem:self itemType:type];

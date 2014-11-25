@@ -20,27 +20,30 @@
         
         self.fixBarItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
         self.fixBarItem.width = Default_Offset;
-        if (type == right) {
-            
-            self.contentBarItem.titleLabel.textAlignment = NSTextAlignmentRight;
-        }
         UIBarButtonItem *contentItem = [[UIBarButtonItem alloc] initWithCustomView:self.contentBarItem];
         [self.items addObject:self.fixBarItem];
         [self.items addObject:contentItem];
     }
     else if (type == center){
-    
-        self.contentBarItem.titleLabel.textAlignment = NSTextAlignmentCenter;
+        
         UIView *containerView = [[UIView alloc] initWithFrame:self.contentBarItem.bounds];
         [containerView addSubview:self.contentBarItem];
         [self.items addObject:containerView];
     }
- }
+}
 
 + (CustomBarItem *)itemWithTitle:(NSString *)title textColor:(UIColor *)color fontSize:(CGFloat )font itemType:(ItemType)type
 {
     CustomBarItem *item = [[CustomBarItem alloc] init];
     [item initCustomItemWithType:type andSize:TitleViewSize];
+    if (type == right) {
+        
+        [item.contentBarItem setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
+    }
+    else if (type == left){
+        
+        [item.contentBarItem setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
+    }
     [item.contentBarItem setTitle:title forState:(UIControlStateNormal)];
     [item.contentBarItem setTitleColor:color forState:(UIControlStateNormal)];
     [item.contentBarItem.titleLabel setFont:[UIFont systemFontOfSize:font]];
@@ -68,15 +71,15 @@
 - (void)setItemWithNavigationItem:(UINavigationItem *)navigationItem itemType:(ItemType)type
 {
     if (type == center) {
-    
+        
         [navigationItem setTitleView:[self.items objectAtIndex:0]];
     }
     else if (type == left){
-    
+        
         [navigationItem setLeftBarButtonItems:self.items];
     }
     else if (type == right){
-    
+        
         [navigationItem setRightBarButtonItems:self.items];
     }
 }
