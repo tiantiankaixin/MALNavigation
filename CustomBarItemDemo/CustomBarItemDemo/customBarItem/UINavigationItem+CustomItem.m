@@ -23,4 +23,26 @@
     [item setItemWithNavigationItem:self itemType:type];
     return item;
 }
+
+- (void)addCustomBarItems:(NSArray *)array itemType:(ItemType)type {
+    
+    NSMutableArray *mutableItems = [[NSMutableArray alloc] init];
+    for (CustomBarItem *barItem in array) {
+        [mutableItems addObjectsFromArray:barItem.items];
+    }
+    if (type == center) {
+        
+        //TODO
+    }
+    else if (type == left){
+        
+        
+        [self setLeftBarButtonItems:mutableItems];
+    }
+    else if (type == right){
+        
+        [self setRightBarButtonItems:mutableItems];
+    }
+}
+
 @end

@@ -13,4 +13,6 @@
 - (CustomBarItem *)setItemWithTitle:(NSString *)title titleColor:(UIColor *)color fontSize:(CGFloat)font itemType:(ItemType)type;
 - (CustomBarItem *)setItemWithImage:(NSString *)imageName size:(CGSize)size itemType:(ItemType)type;
 
+- (void)addCustomBarItems:(NSArray *)array itemType:(ItemType)type;
+
 @end
