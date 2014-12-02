@@ -17,20 +17,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //用图片设置leftItem
     [self.navigationItem setItemWithImage:@"test1.png" size:CGSizeMake(48/2, 26/2) itemType:left];
-    [self.navigationItem setItemWithImage:@"title.png" size:CGSizeMake(141 * 0.5, 37 * 0.5) itemType:center];
+    //用文字设置centerItem
     [self.navigationItem setItemWithTitle:@"自定义item" titleColor:[UIColor whiteColor] fontSize:16 itemType:center];
-    CustomBarItem *rightItem = [self.navigationItem setItemWithImage:@"test1.png" size:CGSizeMake(48/2, 26/2) itemType:right];
-    [rightItem addTarget:self selector:@selector(search) event:(UIControlEventTouchUpInside)];
     
-    CustomBarItem *rightItem2 = [self.navigationItem setItemWithImage:@"test.png" size:CGSizeMake(39/2, 40/2) itemType:right];
+    //添加多个item
+    CustomBarItem *rightItem1 = [CustomBarItem itemWithImage:@"test1.png" size:CGSizeMake(48 / 2, 26 /2) type:right];//从右到左  第一个按钮
+    //[rightItem1 setOffset:-20];//两个item都会移动
+    [rightItem1 addTarget:self selector:@selector(search) event:(UIControlEventTouchUpInside)];
+    
+     CustomBarItem *rightItem2 = [CustomBarItem itemWithImage:@"test.png" size:CGSizeMake(39 / 2, 40 / 2) type:left];//第二个
+    //[rightItem2 setOffset:-20];//只移动rightItem2
     [rightItem2 addTarget:self selector:@selector(search2) event:(UIControlEventTouchUpInside)];
-    
-    NSArray *barButtonItems = @[rightItem, rightItem2];
-    
+    NSArray *barButtonItems = @[rightItem1, rightItem2];
     [self.navigationItem addCustomBarItems:barButtonItems itemType:right];
-//
-//    [rightItem setOffset:-15];//设置item偏移量
 }
 
 - (void)search
