@@ -19,9 +19,8 @@ typedef enum{
 
 @interface CustomBarItem : NSObject
 
-@property (nonatomic, strong) UIBarButtonItem *fixBarItem;
-@property (nonatomic, strong) UIButton *contentBarItem;
-@property (nonatomic, strong) NSMutableArray *items;
+@property (nonatomic, assign) CGSize size;
+
 
 + (CustomBarItem *)itemWithTitle:(NSString *)title textColor:(UIColor *)color fontSize:(CGFloat)font itemType:(ItemType)type;
 + (CustomBarItem *)itemWithImage:(NSString *)imageName size:(CGSize)size type:(ItemType)type;
@@ -29,4 +28,6 @@ typedef enum{
 - (void)addTarget:(id)target selector:(SEL)selector event:(UIControlEvents)event;
 - (void)setOffset:(CGFloat)offSet;//设置item偏移量(在左侧数值越大越靠左，在右侧数值越大越靠右)
 - (void)setTitleViewSize:(CGSize)size;
+- (NSMutableArray *)items;
+
 @end

@@ -9,7 +9,25 @@
 #import "CustomBarItem.h"
 #define Default_Offset -10
 #define TitleViewSize CGSizeMake(100, 30)//用NSString设置item时 item的尺寸
+
+@interface CustomBarItem()
+@property (nonatomic, strong) UIBarButtonItem *fixBarItem;
+@property (nonatomic, strong) UIButton *contentBarItem;
+@property (nonatomic, strong) NSMutableArray *items;
+@end
+
 @implementation CustomBarItem
+
+
+- (NSMutableArray *)items {
+    return _items;
+}
+
+- (CGSize)size {
+    
+    return self.contentBarItem.frame.size;
+    
+}
 
 - (void)initCustomItemWithType:(ItemType)type andSize:(CGSize)size
 {
@@ -18,7 +36,7 @@
     self.contentBarItem.frame = CGRectMake(0, 0, size.width, size.height);
     if (type != center) {
         
-        self.fixBarItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+        self.fixBarItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
         self.fixBarItem.width = Default_Offset;
         UIBarButtonItem *contentItem = [[UIBarButtonItem alloc] initWithCustomView:self.contentBarItem];
         [self.items addObject:self.fixBarItem];
