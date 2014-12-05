@@ -14,5 +14,5 @@
 - (CustomBarItem *)setItemWithImage:(NSString *)imageName size:(CGSize)size itemType:(ItemType)type;
 
 - (void)addCustomBarItems:(NSArray *)array itemType:(ItemType)type;
-
+- (CustomBarItem *)setItemWithCustomView:(UIView *)customView itemType:(ItemType)type;
 @end

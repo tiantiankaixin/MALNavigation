@@ -17,8 +17,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //用图片设置leftItem
-    [self.navigationItem setItemWithImage:@"test1.png" size:CGSizeMake(48/2, 26/2) itemType:left];
+    
+    UISearchBar *search = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, 100, 44)];
+    search.searchBarStyle = UISearchBarStyleMinimal;
+    search.placeholder = @"搜索";
+   [self.navigationItem setItemWithCustomView:search itemType:left];
+//    //用图片设置leftItem
+//    [self.navigationItem setItemWithImage:@"test1.png" size:CGSizeMake(48/2, 26/2) itemType:left];
+    
     //用文字设置centerItem
     [self.navigationItem setItemWithTitle:@"自定义item" titleColor:[UIColor whiteColor] fontSize:16 itemType:center];
     

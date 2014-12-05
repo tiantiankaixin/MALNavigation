@@ -24,6 +24,13 @@
     return item;
 }
 
+- (CustomBarItem *)setItemWithCustomView:(UIView *)customView itemType:(ItemType)type
+{
+    CustomBarItem *item = [CustomBarItem itemWithCustomView:customView itemType:type];
+    [item setItemWithNavigationItem:self itemType:type];
+    return item;
+}
+
 - (void)addCustomBarItems:(NSArray *)array itemType:(ItemType)type {
     
     NSMutableArray *mutableItems = [[NSMutableArray alloc] init];
