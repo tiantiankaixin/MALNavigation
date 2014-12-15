@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)moreItem:(UIButton *)sender;
 
 @end
 

@@ -10,9 +10,7 @@
 #import "CustomBarItem.h"
 @interface UINavigationItem (CustomItem)
 
-- (CustomBarItem *)setItemWithTitle:(NSString *)title titleColor:(UIColor *)color fontSize:(CGFloat)font itemType:(ItemType)type;
+- (CustomBarItem *)setItemWithTitle:(NSString *)title textColor:(UIColor *)color fontSize:(CGFloat)font itemType:(ItemType)type;
 - (CustomBarItem *)setItemWithImage:(NSString *)imageName size:(CGSize)size itemType:(ItemType)type;
-
-- (void)addCustomBarItems:(NSArray *)array itemType:(ItemType)type;
 - (CustomBarItem *)setItemWithCustomView:(UIView *)customView itemType:(ItemType)type;
 @end

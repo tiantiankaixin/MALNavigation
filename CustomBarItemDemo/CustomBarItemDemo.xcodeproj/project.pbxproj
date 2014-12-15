@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		682BA1691A3EB4350019027B /* CustomBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 682BA1661A3EB4350019027B /* CustomBarItem.m */; };
+		682BA16A1A3EB4350019027B /* UINavigationItem+CustomItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 682BA1681A3EB4350019027B /* UINavigationItem+CustomItem.m */; };
+		682BA1731A3EBA470019027B /* MoreItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 682BA1711A3EBA470019027B /* MoreItemViewController.m */; };
+		682BA1741A3EBA470019027B /* MoreItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 682BA1721A3EBA470019027B /* MoreItemViewController.xib */; };
 		68A7D45C1A20A44B00FF867D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7D45B1A20A44B00FF867D /* main.m */; };
 		68A7D45F1A20A44B00FF867D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7D45E1A20A44B00FF867D /* AppDelegate.m */; };
 		68A7D4621A20A44B00FF867D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7D4611A20A44B00FF867D /* ViewController.m */; };
@@ -14,10 +18,6 @@
 		68A7D4671A20A44B00FF867D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68A7D4661A20A44B00FF867D /* Images.xcassets */; };
 		68A7D46A1A20A44B00FF867D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68A7D4681A20A44B00FF867D /* LaunchScreen.xib */; };
 		68A7D4761A20A44B00FF867D /* CustomBarItemDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7D4751A20A44B00FF867D /* CustomBarItemDemoTests.m */; };
-		68A7D4821A20A4B300FF867D /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7D4801A20A4B300FF867D /* TestViewController.m */; };
-		68A7D4831A20A4B300FF867D /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68A7D4811A20A4B300FF867D /* TestViewController.xib */; };
-		68A9BE5E1A20D12500775A94 /* CustomBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A9BE5B1A20D12500775A94 /* CustomBarItem.m */; };
-		68A9BE5F1A20D12500775A94 /* UINavigationItem+CustomItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A9BE5D1A20D12500775A94 /* UINavigationItem+CustomItem.m */; };
 		68DF404A1A20A4D40046EF9C /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 68DF40491A20A4D40046EF9C /* test.png */; };
 		68DF40501A20A59D0046EF9C /* test1.png in Resources */ = {isa = PBXBuildFile; fileRef = 68DF404F1A20A59D0046EF9C /* test1.png */; };
 /* End PBXBuildFile section */
@@ -33,6 +33,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		682BA1651A3EB4350019027B /* CustomBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBarItem.h; sourceTree = "<group>"; };
+		682BA1661A3EB4350019027B /* CustomBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBarItem.m; sourceTree = "<group>"; };
+		682BA1671A3EB4350019027B /* UINavigationItem+CustomItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+CustomItem.h"; sourceTree = "<group>"; };
+		682BA1681A3EB4350019027B /* UINavigationItem+CustomItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+CustomItem.m"; sourceTree = "<group>"; };
+		682BA1701A3EBA470019027B /* MoreItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreItemViewController.h; sourceTree = "<group>"; };
+		682BA1711A3EBA470019027B /* MoreItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreItemViewController.m; sourceTree = "<group>"; };
+		682BA1721A3EBA470019027B /* MoreItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreItemViewController.xib; sourceTree = "<group>"; };
 		68A7D4561A20A44B00FF867D /* CustomBarItemDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomBarItemDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68A7D45A1A20A44B00FF867D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68A7D45B1A20A44B00FF867D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -46,13 +53,6 @@
 		68A7D46F1A20A44B00FF867D /* CustomBarItemDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomBarItemDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68A7D4741A20A44B00FF867D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68A7D4751A20A44B00FF867D /* CustomBarItemDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomBarItemDemoTests.m; sourceTree = "<group>"; };
-		68A7D47F1A20A4B300FF867D /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		68A7D4801A20A4B300FF867D /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
-		68A7D4811A20A4B300FF867D /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
-		68A9BE5A1A20D12500775A94 /* CustomBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBarItem.h; sourceTree = "<group>"; };
-		68A9BE5B1A20D12500775A94 /* CustomBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBarItem.m; sourceTree = "<group>"; };
-		68A9BE5C1A20D12500775A94 /* UINavigationItem+CustomItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+CustomItem.h"; sourceTree = "<group>"; };
-		68A9BE5D1A20D12500775A94 /* UINavigationItem+CustomItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+CustomItem.m"; sourceTree = "<group>"; };
 		68DF40491A20A4D40046EF9C /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		68DF404F1A20A59D0046EF9C /* test1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +75,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		682BA1641A3EB4350019027B /* customNavigationItem */ = {
+			isa = PBXGroup;
+			children = (
+				682BA1651A3EB4350019027B /* CustomBarItem.h */,
+				682BA1661A3EB4350019027B /* CustomBarItem.m */,
+				682BA1671A3EB4350019027B /* UINavigationItem+CustomItem.h */,
+				682BA1681A3EB4350019027B /* UINavigationItem+CustomItem.m */,
+			);
+			path = customNavigationItem;
+			sourceTree = "<group>";
+		};
 		68A7D44D1A20A44B00FF867D = {
 			isa = PBXGroup;
 			children = (
@@ -96,17 +107,17 @@
 		68A7D4581A20A44B00FF867D /* CustomBarItemDemo */ = {
 			isa = PBXGroup;
 			children = (
-				68A9BE591A20D12500775A94 /* customBarItem */,
+				682BA1641A3EB4350019027B /* customNavigationItem */,
 				68DF40491A20A4D40046EF9C /* test.png */,
 				68DF404F1A20A59D0046EF9C /* test1.png */,
 				68A7D45D1A20A44B00FF867D /* AppDelegate.h */,
 				68A7D45E1A20A44B00FF867D /* AppDelegate.m */,
-				68A7D47F1A20A4B300FF867D /* TestViewController.h */,
-				68A7D4801A20A4B300FF867D /* TestViewController.m */,
-				68A7D4811A20A4B300FF867D /* TestViewController.xib */,
 				68A7D4601A20A44B00FF867D /* ViewController.h */,
 				68A7D4611A20A44B00FF867D /* ViewController.m */,
 				68A7D4631A20A44B00FF867D /* Main.storyboard */,
+				682BA1701A3EBA470019027B /* MoreItemViewController.h */,
+				682BA1711A3EBA470019027B /* MoreItemViewController.m */,
+				682BA1721A3EBA470019027B /* MoreItemViewController.xib */,
 				68A7D4661A20A44B00FF867D /* Images.xcassets */,
 				68A7D4681A20A44B00FF867D /* LaunchScreen.xib */,
 				68A7D4591A20A44B00FF867D /* Supporting Files */,
@@ -138,17 +149,6 @@
 				68A7D4741A20A44B00FF867D /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		68A9BE591A20D12500775A94 /* customBarItem */ = {
-			isa = PBXGroup;
-			children = (
-				68A9BE5A1A20D12500775A94 /* CustomBarItem.h */,
-				68A9BE5B1A20D12500775A94 /* CustomBarItem.m */,
-				68A9BE5C1A20D12500775A94 /* UINavigationItem+CustomItem.h */,
-				68A9BE5D1A20D12500775A94 /* UINavigationItem+CustomItem.m */,
-			);
-			path = customBarItem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,8 +234,8 @@
 				68A7D4651A20A44B00FF867D /* Main.storyboard in Resources */,
 				68DF404A1A20A4D40046EF9C /* test.png in Resources */,
 				68A7D46A1A20A44B00FF867D /* LaunchScreen.xib in Resources */,
-				68A7D4831A20A4B300FF867D /* TestViewController.xib in Resources */,
 				68A7D4671A20A44B00FF867D /* Images.xcassets in Resources */,
+				682BA1741A3EBA470019027B /* MoreItemViewController.xib in Resources */,
 				68DF40501A20A59D0046EF9C /* test1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,11 +254,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68A9BE5F1A20D12500775A94 /* UINavigationItem+CustomItem.m in Sources */,
+				682BA1731A3EBA470019027B /* MoreItemViewController.m in Sources */,
+				682BA16A1A3EB4350019027B /* UINavigationItem+CustomItem.m in Sources */,
 				68A7D4621A20A44B00FF867D /* ViewController.m in Sources */,
 				68A7D45F1A20A44B00FF867D /* AppDelegate.m in Sources */,
-				68A7D4821A20A4B300FF867D /* TestViewController.m in Sources */,
-				68A9BE5E1A20D12500775A94 /* CustomBarItem.m in Sources */,
+				682BA1691A3EB4350019027B /* CustomBarItem.m in Sources */,
 				68A7D45C1A20A44B00FF867D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

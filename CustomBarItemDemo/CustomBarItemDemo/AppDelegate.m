@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "TestViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,9 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[TestViewController alloc] init]];
-    [nav.navigationBar setBarTintColor:[UIColor colorWithRed:0.3 green:0.4 blue:0.6 alpha:0.6]];
-    self.window.rootViewController = nav;
     return YES;
 }
 

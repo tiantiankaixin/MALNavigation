@@ -1,13 +1,13 @@
 //
-//  TestViewController.h
+//  MoreItemViewController.h
 //  CustomBarItemDemo
 //
-//  Created by wangtian on 14-11-22.
+//  Created by wangtian on 14-12-15.
 //  Copyright (c) 2014年 wangtian. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface TestViewController : UIViewController
+@interface MoreItemViewController : UIViewController
 
 @end
