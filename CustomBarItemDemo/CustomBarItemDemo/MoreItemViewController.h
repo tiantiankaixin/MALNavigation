@@ -10,4 +10,6 @@
 
 @interface MoreItemViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIView *moreItem;
+
 @end

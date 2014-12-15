@@ -23,12 +23,12 @@
 
 - (void)setUpNavigationItem
 {
-    [self setUpLeftNavigationItem];
+    [self.navigationItem setItemWithCustomView:self.moreItem itemType:right];
     
-    UISearchBar *search = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, 120, 44)];
-    search.searchBarStyle = UISearchBarStyleMinimal;
-    search.placeholder = @"中间搜索";
-    [self.navigationItem setItemWithCustomView:search itemType:center];
+//    UISearchBar *search = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, 120, 44)];
+//    search.searchBarStyle = UISearchBarStyleMinimal;
+//    search.placeholder = @"中间搜索";
+//    [self.navigationItem setItemWithCustomView:search itemType:center];
 }
 
 #pragma mark - 如果要设置多个item，建议采用自定义view。便于控制view之间间距...

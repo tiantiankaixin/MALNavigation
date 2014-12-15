@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoreItemViewController">
             <connections>
+                <outlet property="moreItem" destination="PpR-Bi-Ik0" id="etD-VG-V9J"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,6 +17,40 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+        <view contentMode="scaleToFill" id="PpR-Bi-Ik0" userLabel="多个item">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2v-Xz-ie3">
+                    <rect key="frame" x="6" y="7" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="9Nv-Ud-EvR"/>
+                        <constraint firstAttribute="width" constant="30" id="lLo-li-08q"/>
+                    </constraints>
+                    <state key="normal" title="右一">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="右二" translatesAutoresizingMaskIntoConstraints="NO" id="S4T-vS-fhX">
+                    <rect key="frame" x="48" y="0.0" width="150" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="EtT-fK-g4u"/>
+                        <constraint firstAttribute="height" constant="44" id="qBJ-Aa-Qlc"/>
+                    </constraints>
+                    <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="S4T-vS-fhX" secondAttribute="centerY" id="AmK-pA-KfU"/>
+                <constraint firstAttribute="centerY" secondItem="f2v-Xz-ie3" secondAttribute="centerY" id="hhu-Dr-USr"/>
+                <constraint firstAttribute="trailing" secondItem="S4T-vS-fhX" secondAttribute="trailing" constant="2" id="k2t-07-QyV"/>
+                <constraint firstItem="f2v-Xz-ie3" firstAttribute="leading" secondItem="PpR-Bi-Ik0" secondAttribute="leading" constant="6" id="vrE-bZ-dEG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="166" y="-638.5"/>
         </view>
     </objects>
 </document>

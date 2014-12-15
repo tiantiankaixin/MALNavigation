@@ -18,13 +18,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+     [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.3 green:0.4 blue:0.5 alpha:0.4]];
     [self setUpNavigationItem];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)setUpNavigationItem
 {
-    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.3 green:0.4 blue:0.5 alpha:0.4]];
     
     [self.navigationItem setItemWithImage:@"test1.png" size:CGSizeMake(24, 13) itemType:left];
     
